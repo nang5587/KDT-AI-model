@@ -1,3 +1,7 @@
 /.metadata/
 
 *.npz
+DB/processed_ICN.csv
+DB/preprocessed/combined_with_time.csv
+DB/preprocessed/combined.csv
+DB/preprocessed/combined_encoded.csv
