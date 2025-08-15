@@ -1,0 +1,33 @@
+{
+  "name": "event_type",
+  "reserved": [
+    "<PAD>",
+    "<UNK>"
+  ],
+  "id2token": [
+    "<PAD>",
+    "<UNK>",
+    "Aggregation",
+    "WMS_Inbound",
+    "HUB_Inbound",
+    "WMS_Outbound",
+    "HUB_Outbound",
+    "W_Stock_Inbound",
+    "R_Stock_Inbound",
+    "W_Stock_Outbound",
+    "POS_Sell",
+    "R_Stock_Outbound"
+  ],
+  "counts": {
+    "Aggregation": 200000,
+    "WMS_Inbound": 200000,
+    "WMS_Outbound": 130000,
+    "HUB_Inbound": 130000,
+    "HUB_Outbound": 70000,
+    "W_Stock_Inbound": 70000,
+    "W_Stock_Outbound": 50000,
+    "R_Stock_Inbound": 50000,
+    "R_Stock_Outbound": 10000,
+    "POS_Sell": 10000
+  }
+}
