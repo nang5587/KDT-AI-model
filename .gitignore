@@ -7,3 +7,12 @@ DB/preprocessed/combined.csv
 DB/preprocessed/combined_encoded.csv
 
 preprocessing/dataSet/*.csv
+DB/processed_ICN.csv
+DB/preprocessed/combined_encoded.csv
+DB/preprocessed/combined.csv
+DB/preprocessed/test_dataset_ws3.npz
+DB/preprocessed/train_dataset_ws3.npz
+DB/preprocessed/train_dataset_ws2.npz
+DB/preprocessed/test_dataset_ws2.npz
+DB/preprocessed/combined_with_time.csv
+DB/processed_ICN.csv
