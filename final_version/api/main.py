@@ -33,8 +33,7 @@ def create_app() -> FastAPI:
     app.include_router(anomaly_router)
     return app
 
-# uvicorn 실행 진입점
-# - 개발: uvicorn api.main:app --reload --port 8000
+
 app = create_app()
 
 
