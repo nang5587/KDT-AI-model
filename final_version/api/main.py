@@ -36,3 +36,19 @@ def create_app() -> FastAPI:
 # uvicorn 실행 진입점
 # - 개발: uvicorn api.main:app --reload --port 8000
 app = create_app()
+
+
+@app.get("/artifacts")
+def artifacts_status():
+    ve = (ARTS.vocab_event or {}).get("id2token", [])
+    vl = (ARTS.vocab_loc or {}).get("id2token", [])
+    return {
+        "artifact_dir": str(ARTS and ARTS.__dict__.get("lstm_model") and
+                            __import__("os").getenv("ARTIFACT_DIR", "preprocessed")),
+        "lstm_model": ARTS.lstm_model is not None,
+        "scaler": ARTS.scaler is not None,
+        "vocab_event_size": len(ve),
+        "vocab_loc_size": len(vl),
+        "lstm_threshold": ARTS.lstm_threshold,
+        "markov_loaded": ARTS.markov_model is not None,
+    }
