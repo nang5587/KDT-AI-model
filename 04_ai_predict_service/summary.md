@@ -1,7 +1,5 @@
 ## 04_ai_predict_service/ 각 파일별 상세 역할
 
----
-
 ### 1. artifacts.py
 
 - **주요 역할:**  

@@ -5,9 +5,9 @@ from .scorer_lstm import score_lstm
 from .artifacts import ARTS
 from .settings import settings
 
-router = APIRouter(prefix="/predict", tags=["predict"])
+router = APIRouter(prefix="api/manager/", tags=["predict"])
 
-@router.post("/anomaly", response_model=PredictResponse)
+@router.post("/ai_module", response_model=PredictResponse)
 def predict_anomaly(req: PredictRequest):
     import pandas as pd
     if not req.records:
